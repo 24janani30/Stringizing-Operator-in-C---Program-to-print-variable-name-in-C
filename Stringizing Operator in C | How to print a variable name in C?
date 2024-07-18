@@ -1,0 +1,13 @@
+
+#include <stdio.h>
+
+#define getVariableName(x) #x
+
+int main()
+{
+    int student_age = 21;
+
+    printf("value of %s is = %d\n", getVariableName(student_age), student_age);
+
+    return 0;
+}
